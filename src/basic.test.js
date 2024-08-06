@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { sumAndPlusTen, maxNum, factorial } from "./basic";
+import { sumAndPlusTen, maxNum, factorial, capitalizeWord } from "./basic";
 
 describe("sumAndPlusTen", () => {
   it("should return the sum of a + b + 10 when a, b is integer", () => {
@@ -68,5 +68,11 @@ describe("factorial", () => {
     expect(factorial(200)).toBe(
       788657867364790503552363213932185062295135977687173263294742533244359449963403342920304284011984623904177212138919638830257642790242637105061926624952829931113462857270763317237396988943922445621451664240254033291864131227428294853277524242407573903240321257405579568660226031904170324062351700858796178922222789623703897374720000000000000000000000000000000000000000000000000
     );
+  });
+});
+
+describe("capitalizeWord", () => {
+  it("should return 'Big City' if the input is 'big city'", () => {
+    expect(capitalizeWord("big city")).toBe("Big City");
   });
 });

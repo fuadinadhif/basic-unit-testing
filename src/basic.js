@@ -21,7 +21,7 @@ export function factorial(n) {
   return n * factorial(n - 1);
 }
 
-export function capitalizeFirstLetterOfEachWord(str) {
+export function capitalizeWord(str) {
   return str
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
