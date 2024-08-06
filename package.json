@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "husky": "^9.1.4",
     "vitest": "^2.0.5"
   }
 }

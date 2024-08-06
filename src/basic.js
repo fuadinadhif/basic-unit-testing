@@ -20,3 +20,10 @@ export function factorial(n) {
   if (n === 0 || n === 1) return 1;
   return n * factorial(n - 1);
 }
+
+export function capitalizeFirstLetterOfEachWord(str) {
+  return str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
